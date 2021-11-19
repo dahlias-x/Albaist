@@ -12,10 +12,12 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="/resources/css/app.css">
+        
 
         <!-- Scripts -->
         
         <script src="/resources/js/app.js"defer></script>
+        <script src="/resources/js/bootstrap.js"defer></script>
     </head>
     <body>
         <div class="font-sans text-gray-900 antialiased">
