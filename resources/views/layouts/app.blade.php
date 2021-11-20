@@ -12,6 +12,9 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="/resources/css/app.css">
+        <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet"> -->
+        
         
 
         @livewireStyles
