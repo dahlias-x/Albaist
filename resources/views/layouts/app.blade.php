@@ -20,8 +20,9 @@
         @livewireStyles
 
         <!-- Scripts -->
-        <script src="/resources/js/app.js"defer></script>
-        <script src="/resources/js/bootstrap.js"defer></script>
+        <script src="/resources/js/app.js"></script>
+        <script src="/resources/js/bootstrap.js"></script>
+        <!-- <script src="/livewire/livewire.js"></script> -->
         
     </head>
     <body class="font-sans antialiased">
