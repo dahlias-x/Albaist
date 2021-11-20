@@ -12,6 +12,7 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="/resources/css/app.css">
+        <link rel="stylesheet" href="/public/css/app.css">
         
 
         <!-- Scripts -->
