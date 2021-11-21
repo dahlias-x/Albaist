@@ -28,6 +28,8 @@
                 <a href="#"><h4>{{$product->title}}</h4></a>
                 <h6>${{$product->price}}</h6>
                 <p>{{$product->description}}</p>
+
+                <a class="btn btn-primary" href="#">Add Cart</a>
                
               </div>
             </div>
