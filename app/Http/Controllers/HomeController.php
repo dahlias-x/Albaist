@@ -7,8 +7,12 @@ use Illuminate\Support\Facades\Auth;
 
 use App\Models\User;
 
+use App\Models\Product;
+
 class HomeController extends Controller
 {
+
+
     public function redirect()
     {
         $usertype=Auth::user()->usertype;
@@ -19,9 +23,14 @@ class HomeController extends Controller
         }
         else
         {
-            return view ('user.home');  
+               $data = product::paginate(3);
+
+            return view ('user.home', compact('data'));  
         }
     }
+
+
+
     public function index ()
     {
         if (Auth::id())
@@ -30,7 +39,9 @@ class HomeController extends Controller
         }
         else
         {
-            return view ('user.home');
+            $data = product::paginate(3);
+
+            return view ('user.home', compact('data'));
         }
         
     }

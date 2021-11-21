@@ -22,9 +22,9 @@ https://templatemo.com/tm-546-sixteen-clothing
 -->
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="/assets/css/templatemo-sixteen.css">
+    <link rel="stylesheet" href="/assets/css/owl.css">
 
   </head>
 
@@ -116,8 +116,10 @@ https://templatemo.com/tm-546-sixteen-clothing
     </div>
     <!-- Banner Ends Here -->
 
+
    @include('user.product')
    
+
     <div class="best-features">
       <div class="container">
         <div class="row">
