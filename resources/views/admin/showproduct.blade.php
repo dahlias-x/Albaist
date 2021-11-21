@@ -4,13 +4,14 @@
   <head>
 
       @include('admin.css')
-
+      
       <!-- partial -->
-     
+    </head>
+      <body>
+          
       @include('admin.sidebar')
 
       @include('admin.navbar')
-
 
         <!-- partial -->
 
@@ -66,7 +67,7 @@
                     
 
                         <td>
-                            <a class="btn btn-primary" href="">Update</a>
+                            <a class="btn btn-primary" href="{{url('updateview', $product->id)}}">Update</a>
                         </td>
 
                         <td>
