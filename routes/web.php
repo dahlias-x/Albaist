@@ -42,3 +42,7 @@ Route::post('/updateproduct/{id}',[AdminController::class,'updateproduct']);
 Route::get('/search',[HomeController::class,'search']);
 
 Route::post('/addcard/{id}',[HomeController::class,'addcard']);
+
+Route::get('/showcard',[HomeController::class,'showcard']);
+
+Route::get('/delete/{id}',[HomeController::class,'deletecard']);

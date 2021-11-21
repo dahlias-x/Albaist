@@ -27,7 +27,11 @@ class HomeController extends Controller
         {
                $data = product::paginate(3);
 
-            return view ('user.home', compact('data'));  
+               $user=auth()->user();
+
+               $count=card::where('phone',$user->phone)->count();
+
+            return view ('user.home', compact('data','count'));  
         }
     }
 
@@ -101,4 +105,21 @@ class HomeController extends Controller
 
 }
 
+    public function showcard ()
+    {
+        $user=auth()->user();
+        $card=card::where('phone',$user->phone)->get();
+
+            $count=card::where('phone',$user->phone)->count();
+
+        return view ('user.showcard',compact('count','card'));
+    }
+    public function deletecard($id)
+    {
+        $data=card::find($id);
+        
+        $data->delete();
+        
+        return redirect()->back()->with('message','Product Deleted Successfully');
+    }
 }
