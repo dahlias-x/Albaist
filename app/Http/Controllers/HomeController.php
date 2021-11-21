@@ -9,6 +9,8 @@ use App\Models\User;
 
 use App\Models\Product;
 
+use App\Models\Card;
+
 class HomeController extends Controller
 {
 
@@ -62,5 +64,41 @@ class HomeController extends Controller
 
         return view('user.home',compact('data'));
     }
+
+    public function addcard(Request $request, $id)
+    {
+
+    if(Auth::id())
+    {
+
+        $user=auth()->user();
+
+        $product=product::find($id);
+
+        $card= new card;
+        
+        $card->name=$user->name;
+
+        $card->phone=$user->phone;
+
+        $card->adress=$user->adress;
+
+        $card->product_title=$product->title;
+
+        $card->price=$product->price;
+
+        $card->quantity= $request->quantity;
+
+        $card->save();
+
+        return redirect()->back()->with('message','Product Added Successfully');
+    }
+
+    else
+    {
+        return redirect('login');
+    }
+
 }
 
+}
