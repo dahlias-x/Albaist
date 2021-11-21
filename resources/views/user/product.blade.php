@@ -5,6 +5,10 @@
             <div class="section-heading">
               <h2>Latest Products</h2>
               <a href="products.html">view all products <i class="fa fa-angle-right"></i></a>
+              <form class="form-inline" style="float:">
+                <input class="form-control" type="search" name="search" placeholder="search">
+                <input type="submit" value="Search" class="btn btn-success">
+              </form>
             </div>
           </div>
           
