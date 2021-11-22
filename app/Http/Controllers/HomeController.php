@@ -11,6 +11,8 @@ use App\Models\Product;
 
 use App\Models\Card;
 
+use App\Models\Order;
+
 class HomeController extends Controller
 {
 
@@ -121,5 +123,37 @@ class HomeController extends Controller
         $data->delete();
         
         return redirect()->back()->with('message','Product Deleted Successfully');
+    }
+
+    public function confirmorder(Request $request)
+    {
+            $user=auth()->user();
+            $name=$user->name;
+            $phone=$user->phone;
+            $adress=$user->adress;
+
+            foreach($request->productname as $key=>$productname)
+
+            {
+                $order=new order;
+                
+                $order->product_name=$request->productname[$key];
+
+                $order->price=$request->price[$key];
+
+                $order->quantity=$request->quantity[$key];
+
+                $order->name=$name;
+
+                $order->phone=$phone;
+
+                $order->adress=$adress;
+
+                $order->save();
+
+
+            }
+
+            return redirect()->back();
     }
 }

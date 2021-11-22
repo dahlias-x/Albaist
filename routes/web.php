@@ -46,3 +46,5 @@ Route::post('/addcard/{id}',[HomeController::class,'addcard']);
 Route::get('/showcard',[HomeController::class,'showcard']);
 
 Route::get('/delete/{id}',[HomeController::class,'deletecard']);
+
+Route::post('/order',[HomeController::class,'confirmorder']);

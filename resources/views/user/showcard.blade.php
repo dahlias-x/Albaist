@@ -119,15 +119,36 @@ https://templatemo.com/tm-546-sixteen-clothing
             <td style="padding:10px; font-size:20px;">Action</td>
         </tr>
 
+<form action="{{url('order')}}" method="POST">
+
+@csrf
+
  @foreach($card as $cards)       
 
         <tr style="background-color:black;">
 
-            <td style="padding:10px; color:white;">{{$cards->product_title}}</td>
+            <td style="padding:10px; color:white;">
 
-            <td style="padding:10px; color:white;">{{$cards->quantity}}</td>
+                <input type="text" name="productname[]" value="{{$cards->product_title}}" hidden="">
+                {{$cards->product_title}}
 
-            <td style="padding:10px; color:white;">{{$cards->price}}</td>
+            </td>
+  
+            <td style="padding:10px; color:white;">
+
+                <input type="text" name="quantity[]" value="{{$cards->quantity}}" hidden="">
+                
+                {{$cards->quantity}}
+
+            </td>
+
+            <td style="padding:10px; color:white;">
+
+                <input type="text" name="price[]" value="{{$cards->price}}" hidden="">
+
+                {{$cards->price}}
+        
+            </td>
 
             <td style="padding:10px; color:white;"><a class="btn btn-danger" href="{{url('delete',$cards->id)}}">Delete</a></td>
             
@@ -135,6 +156,11 @@ https://templatemo.com/tm-546-sixteen-clothing
 @endforeach
 
     </table>  
+
+ <button class="btn btn-success">Confirm Order</button>
+
+    </form>
+
     </div>
 
 
