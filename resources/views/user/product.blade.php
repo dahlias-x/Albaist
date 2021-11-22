@@ -35,7 +35,7 @@
 
                 @csrf
 
-                  <input type="number" value="1" min="1" class="form-control" style="width:100px" name="">
+                  <input type="number" value="1" min="1" class="form-control" style="width:100px" name="quantity">
                   
                   <br>
 
