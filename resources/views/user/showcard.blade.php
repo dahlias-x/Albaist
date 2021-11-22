@@ -137,7 +137,7 @@ https://templatemo.com/tm-546-sixteen-clothing
   
             <td style="padding:10px; color:white;">
 
-                <input type="text" name="quantity[]" value="{{$cards->quantity}}" hidden="">
+                <input type="number" name="quantity []" value="{{$cards->quantity}}" hidden="">
                 
                 {{$cards->quantity}}
 
