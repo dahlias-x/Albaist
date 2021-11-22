@@ -13,7 +13,7 @@
         <!-- Styles -->
         <link rel="stylesheet" href="/resources/css/app.css">
         <link rel="stylesheet" href="/public/css/app.css">
-        <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">  -->
+         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">  
         
         
 
@@ -47,9 +47,7 @@
 
         @livewireScripts
          <!-- Scripts -->
-         <!-- <script src="/livewire/livewire.js"></script>
-        <script src="/resources/js/app.js"defer></script>
-        <script src="/resources/js/bootstrap.js"defer></script> -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+         <script src="{{ asset('js/app.js') }}"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
     </body>
 </html>
