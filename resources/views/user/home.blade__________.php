@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -76,7 +75,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                       <a class="nav-link" href="{{url('showcard')}}"><i class="fas fa-shopping-cart"></i> Card [{{$count}}]</a>
                     </li> 
                        
-                          <x-app-layout>
+                          
    
                           </x-app-layout>
                        
