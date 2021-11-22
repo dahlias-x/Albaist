@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use Illuminate\Support\Facades\Auth;
+
+use Illuminate\Support\Facades\DB;
 
 use App\Models\User;
 
@@ -149,11 +152,14 @@ class HomeController extends Controller
 
                 $order->adress=$adress;
 
+                $order->status='not delivered';
+
                 $order->save();
 
 
             }
 
-            return redirect()->back();
+            DB::table('cards')->where('phone',$phone)->delete();
+            return redirect()->back()->with('message','Product Order Successfully');;
     }
 }

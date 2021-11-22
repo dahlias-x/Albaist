@@ -12,8 +12,8 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="/resources/css/app.css">
-        <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet"> -->
+        <link rel="stylesheet" href="/public/css/app.css">
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
         
         
 
@@ -47,8 +47,8 @@
 
         @livewireScripts
          <!-- Scripts -->
-         <script src="/resources/js/app.js"></script>
-        <script src="/resources/js/bootstrap.js"></script>
-        <!-- <script src="/livewire/livewire.js"></script> -->
+         <script src="/livewire/livewire.js"></script>
+        <script src="/resources/js/app.js"defer></script>
+        <script src="/resources/js/bootstrap.js"defer></script>
     </body>
 </html>

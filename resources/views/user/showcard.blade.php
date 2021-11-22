@@ -110,6 +110,7 @@ https://templatemo.com/tm-546-sixteen-clothing
 
 
     </header>
+    <body>
     <div style="padding:100px;" align="center">
     <table>
         <tr style="background-color:black; color:white;">

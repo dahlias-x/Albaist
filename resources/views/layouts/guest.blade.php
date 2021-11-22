@@ -13,7 +13,7 @@
         <!-- Styles -->
         <link rel="stylesheet" href="/resources/css/app.css">
         <link rel="stylesheet" href="/public/css/app.css">
-        <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
         
 
         <!-- Scripts -->
