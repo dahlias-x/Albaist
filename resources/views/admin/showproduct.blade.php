@@ -71,7 +71,7 @@
                         </td>
 
                         <td>
-                            <a class="btn btn-danger" href="{{url('deleteproduct',$product->id)}}">Delete</a>
+                            <a class="btn btn-danger" onclick="return confirm('Are you sure?')" href="{{url('deleteproduct',$product->id)}}">Delete</a>
                         </td>
 
 
