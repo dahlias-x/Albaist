@@ -7,12 +7,12 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 use App\Models\Product;
-
+ 
 use App\Models\Order;
 
 use App\Models\Id;
 
-use App\Models\User;
+
 class AdminController extends Controller
 {
     public function product ()
@@ -20,7 +20,7 @@ class AdminController extends Controller
 
         if(Auth::id())
         { 
-            if(Auth::user->usertype=='1')
+            if(Auth::user()->usertype=='1')
             {
                 return view ('admin.product');
         }
